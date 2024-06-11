@@ -1,9 +1,9 @@
-import TopicsList from "@/components/TopicsList";
+import RegisterForm from "@/components/RegisterForm";
 
 
 export default function Home() {
   return (
-   <div><TopicsList /></div>
+   <div><RegisterForm /></div>
  
   );
 }

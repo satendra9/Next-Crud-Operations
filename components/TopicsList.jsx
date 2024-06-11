@@ -2,6 +2,7 @@ import React from 'react';
 import {HiPencilAlt} from 'react-icons/hi';
 import RemoveBtn from './RemoveBtn';
 import Link from 'next/link';
+import Navbar from './Navbar';
 
 const getTopics = async ()=> {
     try{
@@ -25,6 +26,7 @@ const TopicsList = async () => {
   return (
 
     <>
+    <Navbar />
     {topics.map((t) => (
     <div key={t._id} className="p-4 border border-slate-300 my-3 flex justify-between gap-5 items-start">
           <div >

@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
+import Navbar from './Navbar';
 
 const EditTopicForm = ({id, title, description}) => {
   const router = useRouter();
@@ -30,7 +31,10 @@ const EditTopicForm = ({id, title, description}) => {
   };
   
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+    <>
+    <Navbar/>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 mt-4">
+    
     <input
       onChange={(e) => setNewTitle(e.target.value)}
       value={newTitle}
@@ -54,6 +58,7 @@ const EditTopicForm = ({id, title, description}) => {
       Update Topic
     </button>
   </form>
+  </>
   )
 }
 

@@ -20,7 +20,7 @@ const EditTopic = async ({params}) => {
   const {topic} = await getTopicById(id);
   const {title, description} = topic;
   return (
-    <div> <EditTopicForm id={id} title={title} description={description}/> </div>
+    <div> <EditTopicForm id={id} title={title} description={description} criteria={true}/> </div>
   )
 }
 
